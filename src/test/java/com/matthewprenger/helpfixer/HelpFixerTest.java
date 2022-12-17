@@ -1,13 +1,13 @@
 package com.matthewprenger.helpfixer;
 
 import static com.matthewprenger.helpfixer.HelpFixer.validCompareTo;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class HelpFixerTest {
 
