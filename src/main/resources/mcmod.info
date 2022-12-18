@@ -1,10 +1,21 @@
-[{
-  "modid": "HelpFixer",
-  "name": "HelpFixer",
-  "version": "${version}",
-  "description": "${description}",
-  "url": "${url}",
-  "authorList": ["matthewprenger"],
-  "credits": "Forge, FML, and MCP for making this project possible",
-  "dependencies": []
-}]
+{
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "Fixes the help command from mod derpyness",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "http://minecraft.curseforge.com/mc-mods/223797-helpfixer",
+		"updateUrl": "",
+		"authorList": ["matthewprenger"],
+		"credits": "Forge, FML, and MCP for making this project possible",
+		"logoFile": "",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": [],
+		"dependencies": [],
+		"dependants": [],
+		"useDependencyInformation": true
+	}]
+}
