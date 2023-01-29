@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
+
 import org.junit.jupiter.api.Test;
 
 public class HelpFixerTest {
@@ -14,6 +15,7 @@ public class HelpFixerTest {
     @Test
     public void testValidCompareTo() {
         ICommand cmd1 = new CommandBase() {
+
             @Override
             public String getCommandName() {
                 return "foo";
@@ -34,6 +36,7 @@ public class HelpFixerTest {
         };
 
         ICommand cmd2 = new CommandBase() {
+
             @Override
             public String getCommandName() {
                 return "foo";
@@ -54,6 +57,7 @@ public class HelpFixerTest {
         };
 
         ICommand cmd3 = new CommandBase() {
+
             @Override
             public String getCommandName() {
                 return "z";
