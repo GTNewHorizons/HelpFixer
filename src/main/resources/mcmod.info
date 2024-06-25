@@ -12,10 +12,6 @@
 		"credits": "Forge, FML, and MCP for making this project possible",
 		"logoFile": "",
 		"screenshots": [],
-		"parent": "",
-		"requiredMods": [],
-		"dependencies": [],
-		"dependants": [],
-		"useDependencyInformation": true
+		"parent": ""
 	}]
 }
