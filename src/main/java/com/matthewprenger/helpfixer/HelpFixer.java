@@ -9,8 +9,8 @@ import java.util.List;
 import javax.annotation.Nonnull;
 
 import net.minecraft.command.CommandBase;
-import net.minecraft.command.CommandHelp;
 import net.minecraft.command.CommandException;
+import net.minecraft.command.CommandHelp;
 import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
@@ -45,23 +45,23 @@ public class HelpFixer {
                     try {
                         if (command.getCommandName() == null) {
                             FMLLog.warning(
-                                String.format(
-                                    "[HelpFixer] Identified command with null name, Ignoring: %s",
-                                    command.getClass().getName()));
+                                    String.format(
+                                            "[HelpFixer] Identified command with null name, Ignoring: %s",
+                                            command.getClass().getName()));
                             iterator.remove();
                         } else if (command.getCommandUsage(sender) == null) {
                             FMLLog.warning(
-                                String.format(
-                                    "[HelpFixer] Identified command with null usage, Ignoring: %s",
-                                    command.getClass().getName()));
+                                    String.format(
+                                            "[HelpFixer] Identified command with null usage, Ignoring: %s",
+                                            command.getClass().getName()));
                             iterator.remove();
                         }
                     } catch (CommandException commandException) {
                         FMLLog.warning(
-                            String.format(
-                                "[HelpFixer] Command to throw exception %s, Ignoring: %s",
-                                commandException.getClass().getName(),
-                                command.getClass().getName()));
+                                String.format(
+                                        "[HelpFixer] Command to throw exception %s, Ignoring: %s",
+                                        commandException.getClass().getName(),
+                                        command.getClass().getName()));
                         iterator.remove();
                     }
                 }
